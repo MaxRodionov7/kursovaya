@@ -49,10 +49,6 @@ public class activity_hot_tours extends AppCompatActivity {
 
     }
 
-    public void Find_tours (View v){
-        Intent intent = new Intent(this, activity_main.class);
-        startActivity(intent);
-    }
 
     public void Hot_tours (View v){
         Intent intent = new Intent(this, activity_hot_tours.class);
@@ -82,21 +78,21 @@ public class activity_hot_tours extends AppCompatActivity {
         FirebaseRecyclerOptions<Hotels> options = new FirebaseRecyclerOptions.Builder<Hotels>()
                 .setQuery(HotelsRef, Hotels.class).build();
 
-        FirebaseRecyclerAdapter<Hotels, ProductViewHolder> adapter = new FirebaseRecyclerAdapter<Hotels, ProductViewHolder>(options) {
+        FirebaseRecyclerAdapter<Hotels, HotelViewHolder> adapter = new FirebaseRecyclerAdapter<Hotels, HotelViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull @NotNull ProductViewHolder holder, int i, @NonNull @NotNull Hotels model) {
-                holder.txtProductName.setText(model.getCountry()+" " + model.getHname());
-                holder.txtProductDescription.setText(model.getDescription());
-                holder.txtProductPrice.setText("Стоимость = " + model.getPrice() + " рублей");
+            protected void onBindViewHolder(@NonNull @NotNull HotelViewHolder holder, int i, @NonNull @NotNull Hotels model) {
+                holder.txtHotelName.setText(model.getCountry()+" " + model.getHname());
+                holder.txtHotelDescription.setText(model.getDescription());
+                holder.txtHotelPrice.setText("Стоимость = " + model.getPrice() + " рублей");
                 Picasso.get().load(model.getImage()).into(holder.imageView);
             }
 
             @NonNull
             @NotNull
             @Override
-            public ProductViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
+            public HotelViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.hotel_items_layout, parent, false);
-                ProductViewHolder holder = new ProductViewHolder(view);
+                HotelViewHolder holder = new HotelViewHolder(view);
                 return holder;
             }
         };

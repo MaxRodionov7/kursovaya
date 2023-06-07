@@ -120,10 +120,6 @@ public class activity_support extends AppCompatActivity {
         });
     }
 
-    public void Find_tours(View v) {
-        Intent intent = new Intent(this, activity_main.class);
-        startActivity(intent);
-    }
 
     public void Hot_tours(View v) {
         Intent intent = new Intent(this, activity_hot_tours.class);

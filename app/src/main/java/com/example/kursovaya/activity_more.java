@@ -18,10 +18,7 @@ public class activity_more extends AppCompatActivity {
         Window w = getWindow();
         w.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
     }
-    public void Find_tours(View v) {
-        Intent intent = new Intent(this, activity_main.class);
-        startActivity(intent);
-    }
+
 
     public void Hot_tours(View v) {
         Intent intent = new Intent(this, activity_hot_tours.class);
