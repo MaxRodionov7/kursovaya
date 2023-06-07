@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.kursovaya.activity_hot_tours">
+
+
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите страну"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/notallwhite"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        ></TextView>
+
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/slogan">
+
+        <ImageView
+            android:id="@+id/uk"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/uk"
+            android:layout_margin="20dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/canada"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/canada"
+            android:layout_margin="20dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/us"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/us"
+            android:layout_margin="20dp">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/first_line">
+
+        <ImageView
+            android:id="@+id/china"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/china"
+            android:layout_margin="20dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/italy"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/italy"
+            android:layout_margin="20dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/spain"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/spain"
+            android:layout_margin="20dp">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/second_line">
+
+        <ImageView
+            android:id="@+id/france"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/france"
+            android:layout_margin="20dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/germany"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/germany"
+            android:layout_margin="20dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/turkey"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/turkey"
+            android:layout_margin="20dp">
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="650dp"
+        android:text="Выход"
+        android:onClick="Exit"
+        android:background="@drawable/button"
+        app:backgroundTint="@color/button"/>
+
+</RelativeLayout>

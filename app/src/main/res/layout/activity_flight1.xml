@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8CE3"
+    tools:context="com.example.kursovaya.activity_flight1">
+
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="Выберите время отправления"
+        android:textAllCaps="false"
+        android:textColor="@color/button"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food"
+        android:dropDownWidth="wrap_content"
+        android:textColor="@color/black"
+        android:background="@color/colorBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Best_tours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/andika"
+        android:text="Далее"
+        android:onClick="Next1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/button" />
+
+
+    <LinearLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/notallwhite"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="50dp"
+            android:onClick="Back"
+            app:srcCompat="@drawable/ic_action_back"
+            app:tint="@color/icons" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

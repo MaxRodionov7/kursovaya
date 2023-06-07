@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8CE3"
+    tools:context="com.example.kursovaya.activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="170sp"
+            android:fontFamily="@font/andika"
+            android:lineSpacingExtra="34sp"
+            android:text="Откуда"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText2"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220sp"
+            android:layout_marginTop="170sp"
+            android:fontFamily="@font/andika"
+            android:lineSpacingExtra="34sp"
+            android:text="Куда"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText2"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_to"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="200dp"
+            android:ems="0"
+            android:inputType="text"
+            android:textColor="@color/notallwhite"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/edit_from"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:ems="0"
+            android:inputType="text"
+            android:textColor="@color/notallwhite"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="250sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/departure"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editTextDate5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/departure"
+        android:ems="0"
+        android:inputType="date"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/departure"
+            android:src="@drawable/__2022_12_14_010324" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <TextView
+        android:id="@+id/nights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDate5"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/countofnight"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editNights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nights"
+        android:ems="0"
+        android:inputType="number"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNights"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/countofpeople"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editPeoples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/people"
+        android:ems="0"
+        android:inputType="number"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPeoples"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/countofstars"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stars"
+        android:clickable="true"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/typeoffood"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food"
+        android:dropDownWidth="wrap_content"
+        android:textColor="@color/black"
+        android:background="@color/colorBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/notallwhite"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="50dp"
+            android:onClick="Find_tours"
+            app:srcCompat="@drawable/ic_action_name"
+            app:tint="@color/icons" />
+
+
+        <ImageButton
+            android:id="@+id/btn_hot_tours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="50dp"
+            android:onClick="Hot_tours"
+            app:srcCompat="@drawable/ic_action_name1"
+            app:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/btn_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:onClick="Support"
+            app:srcCompat="@drawable/ic_action_support"
+            android:background="@android:color/transparent"
+            app:tint="@color/icons"/>
+        <ImageButton
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:onClick="More"
+            app:srcCompat="@drawable/ic_action_name6"
+            android:background="@android:color/transparent"
+            app:tint="@color/icons"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:text="@string/findtours"
+        android:onClick="Find_tours1"
+        app:backgroundTint="@color/button" />
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8CE3"
+    tools:context="com.example.kursovaya.activity_hot_tours">
+
+
+    <TextView
+        android:id="@+id/welcome_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDate5"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/welcomesupport"
+        android:textAllCaps="false"
+        android:textColor="@color/notallwhite"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/edit_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_support"
+        android:ems="0"
+        android:inputType="text"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_question"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/name"
+        android:textAllCaps="false"
+        android:textColor="@color/notallwhite"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:ems="0"
+        android:inputType="text"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_name"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/phone"
+        android:textAllCaps="false"
+        android:textColor="@color/notallwhite"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:ems="0"
+        android:inputType="number"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Best_tours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="230dp"
+
+            android:text="@string/ask"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/button"
+            android:background="@drawable/button"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/notallwhite"
+        android:orientation="horizontal">
+
+
+
+
+    <ImageButton
+        android:id="@+id/btn_hot_tours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:minHeight="50dp"
+        android:onClick="Hot_tours"
+        app:srcCompat="@drawable/ic_action_name1"
+        app:tint="@color/icons" />
+
+    <ImageButton
+        android:id="@+id/btn_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:minHeight="50dp"
+        android:onClick="Support"
+        app:srcCompat="@drawable/ic_action_support"
+        android:background="@android:color/transparent"
+        app:tint="@color/icons"/>
+    <ImageButton
+        android:id="@+id/btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:minHeight="50dp"
+        android:onClick="More"
+        app:srcCompat="@drawable/ic_action_name6"
+        android:background="@android:color/transparent"
+        app:tint="@color/icons"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8CE3"
+    tools:context="com.example.kursovaya.activity_hot_tours">
+
+    <Button
+        android:id="@+id/button_about"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:text="@string/about"
+        android:onClick="About"
+        app:backgroundTint="@color/button"
+        android:background="@drawable/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:id="@+id/button_contacts"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_about"
+        android:text="@string/contacts"
+        android:onClick="Contacts"
+        app:backgroundTint="@color/button"
+        android:background="@drawable/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:id="@+id/button_rewiews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_contacts"
+        android:layout_marginTop="10dp"
+        android:text="@string/reviews"
+        android:onClick="Reviews"
+        app:backgroundTint="@color/button"
+        android:background="@drawable/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/button_sales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_rewiews"
+        android:text="Акции"
+        android:onClick="Sales"
+        app:backgroundTint="@color/button"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_sales"
+        android:text="Выход"
+        android:onClick="Exit"
+        app:backgroundTint="@color/button"
+
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/notallwhite"
+        android:orientation="horizontal">
+
+
+
+
+        <ImageButton
+            android:id="@+id/btn_hot_tours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="50dp"
+            android:onClick="Hot_tours"
+            app:srcCompat="@drawable/ic_action_name1"
+            app:tint="@color/icons" />
+
+        <ImageButton
+            android:id="@+id/btn_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:onClick="Support"
+            app:srcCompat="@drawable/ic_action_support"
+            android:background="@android:color/transparent"
+            app:tint="@color/icons"/>
+        <ImageButton
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:onClick="More"
+            app:srcCompat="@drawable/ic_action_name6"
+            android:background="@android:color/transparent"
+            app:tint="@color/icons"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

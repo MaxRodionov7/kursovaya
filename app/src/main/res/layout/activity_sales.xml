@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8CE3"
+    tools:context="com.example.kursovaya.activity_hot_tours">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="Актуальные акции:"
+        android:textAllCaps="false"
+        android:textColor="@color/notallwhite"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#92CAF6"
+        app:cardCornerRadius="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/review2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/adamina"
+                android:lineSpacingExtra="34sp"
+                android:text="@string/sale"
+                android:textAllCaps="false"
+                android:textColor="#6E6D6C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/notallwhite"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="50dp"
+            android:onClick="Back"
+            app:srcCompat="@drawable/ic_action_back"
+            app:tint="@color/icons" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

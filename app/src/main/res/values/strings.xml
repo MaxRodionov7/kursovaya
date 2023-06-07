@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Travel Agency</string>
+    <string name="departure">Дата вылета</string>
+    <string name="countofnight">Количество ночей</string>
+    <string name="countofpeople">Количество человек</string>
+    <string name="countofstars">Категория</string>
+    <string name="typeoffood">Тип питания</string>
+    <string name="findtours">Найти туры</string>
+    <string name="findhottours">Поиск горящих туров</string>
+    <string name="besttours">Лучшие горящие туры</string>
+    <string name="where">Откуда</string>
+    <string name="costoftour">Цена тура</string>
+    <string name="about">О нас</string>
+    <string name="support">Поддержка</string>
+    <string name="contacts">Контакты</string>
+    <string name="faq">FAQ</string>
+    <string name="reviews">Отзывы</string>
+    <string name="settings">Дополнительные функции</string>
+    <string name="welcomesupport">Введите ваш вопрос</string>
+    <string name="name">Введите ваше имя</string>
+    <string name="phone">Введите контактный телефон</string>
+    <string name="ask">Заказать обратный звонок</string>
+    <string name="chosehotel">Выберите отель</string>
+    <string name="enter1">Уже есть аккаунт? Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="sale">До Нового Года скидки на поездки в Геленджик. Успейте купить тур по выгодной цене!</string>
+</resources>

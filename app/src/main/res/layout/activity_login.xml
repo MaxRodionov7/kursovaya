@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context="com.example.kursovaya.activity_hot_tours">
+
+
+
+    <EditText
+        android:id="@+id/number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:ems="0"
+        android:padding="15dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:textColorHint="@color/notallwhite"
+        android:hint="Номер телефона"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_input"
+        android:ems="0"
+        android:padding="15dp"
+        android:background="@drawable/input_design"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/notallwhite"
+        android:hint="Пароль"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/login_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/password_input">
+
+        <CheckBox
+            android:id="@+id/login_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Запомнить меня"
+            android:textColor="@color/button"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+        </CheckBox>
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Забыли пароль?"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button"
+        android:layout_below="@id/login_linear"
+        android:layout_marginRight="20dp"
+        android:text="Войти"
+        android:onClick="enter1"
+        app:backgroundTint="@color/button" />
+
+    <TextView
+        android:id="@+id/admin_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Для админа"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="280dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/customer_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Для клиентов"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/notallwhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible"
+        ></TextView>
+
+</RelativeLayout>

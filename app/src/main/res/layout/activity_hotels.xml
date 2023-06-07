@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8CE3"
+    tools:context="com.example.kursovaya.activity_hot_tours">
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginLeft="15sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/chosehotel"
+        android:textAllCaps="false"
+        android:textColor="@color/button"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/departure"
+            android:src="@drawable/hotel1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Turkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="170sp"
+                android:fontFamily="@font/adamina"
+                android:lineSpacingExtra="34sp"
+                android:text="Hotel_1,"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/hotel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="170sp"
+                android:fontFamily="@font/adamina"
+                android:lineSpacingExtra="34sp"
+                android:text="Стамбул"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="170sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner"
+                android:onClick="Next"
+                android:text="от 70365 RUB"
+                app:backgroundTint="@color/button" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/about_hotel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="210sp"
+                android:fontFamily="@font/adamina"
+                android:lineSpacingExtra="34sp"
+                android:text="1-ая линяя, ВСЕ ВКЛЮЧЕНО"
+                android:textAllCaps="false"
+                android:textColor="@color/icons"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:typeface="normal" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/roundedImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotel2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Turkey1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="170sp"
+                android:fontFamily="@font/adamina"
+                android:lineSpacingExtra="34sp"
+                android:text="Hotel_2,"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/hotel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="170sp"
+                android:fontFamily="@font/adamina"
+                android:lineSpacingExtra="34sp"
+                android:text="Анкара"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="170sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner"
+                android:onClick="Next"
+                android:text="от 134000 RUB"
+                app:backgroundTint="@color/button" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/about_hotel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="210sp"
+                android:fontFamily="@font/adamina"
+                android:lineSpacingExtra="34sp"
+                android:text="2-ая линяя, ВСЕ ВКЛЮЧЕНО"
+                android:textAllCaps="false"
+                android:textColor="@color/icons"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:typeface="normal" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/notallwhite"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="50dp"
+            android:onClick="Back"
+            app:srcCompat="@drawable/ic_action_back"
+            app:tint="@color/icons" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

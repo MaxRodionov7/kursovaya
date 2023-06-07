@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8CE3"
+    tools:context="com.example.kursovaya.activity_hot_tours">
+
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textColor="@color/button"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/hotel_name"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="Введите ФИО"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editTextDate5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:ems="0"
+        android:inputType="text"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/nights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDate5"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="Введите серию и номер паспорта"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editNights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nights"
+        android:ems="0"
+        android:inputType="number"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNights"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="Введите срок действия паспорта"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stars"
+        android:ems="0"
+        android:inputType="date"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit1"
+        android:layout_marginLeft="10sp"
+        android:fontFamily="@font/andika"
+        android:lineSpacingExtra="34sp"
+        android:text="Введите контактный номер телефона"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText2"
+        android:textSize="16sp"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editPeoples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/people"
+        android:ems="0"
+        android:inputType="number"
+        android:textColor="@color/notallwhite"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/Next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@id/editPeoples"
+        android:fontFamily="@font/andika"
+        android:text="Завершить оформление и перейти на главную страницу"
+        android:onClick="Next1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/button" />
+
+
+
+    <LinearLayout
+        android:id="@+id/tail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/notallwhite"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="50dp"
+            android:onClick="Back"
+            app:srcCompat="@drawable/ic_action_back"
+            app:tint="@color/icons" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
