@@ -62,7 +62,7 @@ public class activity_registration extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        String hname = intent.getStringExtra("hname");
+        String hname = intent.getStringExtra("hnamee");
 
 
         hotel_name.setText(hname);

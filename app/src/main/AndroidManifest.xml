@@ -63,13 +63,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activity_hot_tours_all"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+        
         <activity
             android:name=".activity_about_us"
             android:exported="false">

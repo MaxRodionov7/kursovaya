@@ -28,7 +28,7 @@ public class activity_hot_tours extends AppCompatActivity {
 
     DatabaseReference HotelsRef;
 
-    TextView hname;
+    TextView hnamee;
     private RecyclerView recyclerView;
 
     RecyclerView.LayoutManager layoutManager;
@@ -50,24 +50,27 @@ public class activity_hot_tours extends AppCompatActivity {
     }
 
 
-    public void Hot_tours (View v){
+    public void Hot_tours(View v) {
         Intent intent = new Intent(this, activity_hot_tours.class);
         startActivity(intent);
     }
 
-    public void More (View v){
+    public void More(View v) {
         Intent intent = new Intent(this, activity_more.class);
         startActivity(intent);
     }
-    public void Support (View v){
+
+    public void Support(View v) {
         Intent intent = new Intent(this, activity_support.class);
         startActivity(intent);
     }
-    public void enter1 (View v){
-        Intent intent = new Intent(this, activity_registration.class);
-        hname = (TextView) findViewById(R.id.product_name);
-        intent.putExtra("hname", hname.getText().toString());
-        startActivity(intent);
+
+    public void enter1(View v) {
+//        Intent intent = new Intent(this, activity_registration.class);
+//        hnamee = (TextView) findViewById(R.id.product_name);
+//
+//        intent.putExtra("hnamee", hnamee.getText().toString());
+//        startActivity(intent);
     }
 
     @Override
@@ -81,10 +84,16 @@ public class activity_hot_tours extends AppCompatActivity {
         FirebaseRecyclerAdapter<Hotels, HotelViewHolder> adapter = new FirebaseRecyclerAdapter<Hotels, HotelViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull @NotNull HotelViewHolder holder, int i, @NonNull @NotNull Hotels model) {
-                holder.txtHotelName.setText(model.getCountry()+" " + model.getHname());
+                holder.txtHotelName.setText(model.getCountry() + " " + model.getHname());
+
                 holder.txtHotelDescription.setText(model.getDescription());
                 holder.txtHotelPrice.setText("Стоимость = " + model.getPrice() + " рублей");
                 Picasso.get().load(model.getImage()).into(holder.imageView);
+                holder.loginBtn.setOnClickListener(view -> {
+                    Intent intent = new Intent(getApplicationContext(), activity_registration.class);
+                    intent.putExtra("hnamee", model.getCountry() + " " + model.getHname());
+                    startActivity(intent);
+                });
             }
 
             @NonNull
